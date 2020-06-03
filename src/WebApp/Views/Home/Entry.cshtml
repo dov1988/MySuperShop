@@ -1,0 +1,38 @@
+﻿
+@{
+    Layout = null;
+    ViewBag.Title = "Entry";
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>My Super Shop - Вход</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div>
+        <h4><b>Вход на MyShop</b></h4>
+        <br />
+        <h5>Пожалуйста, введите логин и пароль для входа на сайт или пройдите регистрацию, если у Вас еще нет аккаунта.</h5>
+        <h5><b>Логин</b></h5>
+        @Html.TextBox("Логин")
+        <h5><b>Пароль</b></h5>
+        @Html.TextBox("Пароль")
+        <br />
+        <p><input type="submit" value="Войти" /></p>
+        <br />
+        <a><b>Регистрация</b></a>
+        <br />
+        <a><b>Забыли пароль?</b></a>
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+</body>
+</html>
+
+
+

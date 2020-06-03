@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My SuperShop - @ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="constant content">
+        <a><img src="/Content/Basket.png" width="30" height="30"></a>
+        <br />
+        <a><b>Вернуться на главную</b></a>
+        <br />
+        <a><b>Перейти в личный кабинет</b></a>
+        <br />
+        @Html.TextBox("Поиск", "Введите текст...")
+        <p><input type="submit" value="Поиск" /></p>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <footer>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

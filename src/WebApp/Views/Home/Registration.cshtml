@@ -1,0 +1,41 @@
+﻿
+@{
+    Layout = null;
+    ViewBag.Title = "Registration";
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>My Super Shop - Регистрация</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div>
+        <h4>Регистрация</h4>
+        <br/>
+        <br />
+            <p>Фамилия: </p>
+            @Html.TextBox("Label")
+            <p>Имя:</p>
+            @Html.TextBox("Label")
+            <p>Отчество: </p>
+            @Html.TextBox("Label")
+            <p>Дата рождения в формате ЧЧ.ММ.ГГГГ: </p>
+            @Html.TextBox("Label")
+            <p>Телефон:</p>
+            @Html.TextBox("Label")
+            <p>Email: </p>
+            @Html.TextBox("Label")<br />
+            <p><input type="submit" value="Создать аккаунт" /></p>
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+</body>
+</html>
+
+
+
