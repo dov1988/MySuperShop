@@ -136,6 +136,9 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CartController.cs" />
+    <Compile Include="Controllers\ProductsDataController.cs" />
+    <Compile Include="Controllers\OrdersDataController.cs" />
     <Compile Include="Controllers\PersonalDataController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
@@ -183,7 +186,12 @@
     <Content Include="Views\PersonalData\PersonalArea.cshtml" />
     <Content Include="Views\PersonalData\DataEditing.cshtml" />
     <Content Include="Views\PersonalData\DataStorage.cshtml" />
-    <Content Include="Views\OrderData\OrdersHistory.cshtml" />
+    <Content Include="Views\OrdersData\OrdersHistory.cshtml" />
+    <Content Include="Views\OrdersData\OrdersCurrent.cshtml" />
+    <Content Include="Views\ProductsData\ProductsCatalog.cshtml" />
+    <Content Include="Views\ProductsData\PagesCatalog.cshtml" />
+    <Content Include="Views\ProductsData\ProductDetails.cshtml" />
+    <Content Include="Views\Cart\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

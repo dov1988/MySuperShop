@@ -6,20 +6,25 @@ using System.Web.Mvc;
 
 namespace WebApp.Controllers
 {
-    public class PersonalDataController : Controller
+    public class ProductsDataController : Controller
     {
-        public ActionResult PersonalArea()
+        public ActionResult ProductsCatalog()
         {
             return View();
         }
-        public ActionResult DataEditing()
+        public ActionResult PagesCatalog()
         {
             return View();
         }
 
-        public ActionResult DataStorage()
+        public ActionResult ProductDetails()
         {
             return View();
+        }
+
+        public ActionResult HomePage()
+        {
+           return View();
         }
     }
 }

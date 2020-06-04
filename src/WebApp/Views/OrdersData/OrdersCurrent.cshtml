@@ -1,0 +1,165 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Текущие заказы";
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div>
+        <h4><b>Текущие заказы</b></h4>
+        <br />
+        <br />
+        <table>
+            <tr>
+                <td><b>Дата заказа</b></td>
+                <td><b>Номер заказа</b></td>
+                <td><b>Примерная дата поступления</b></td>
+                <td><b>Состояние заказа</b></td>
+                <td><b>Артикул товара</b></td>
+                <td><b>Наименование товара</b></td>
+                <td><b>Количество</b></td>
+                <td><b>Цена</b></td>
+                <td><b>Общая стоимость</b></td>
+            </tr>
+            <tr>
+                <td>22.02.2020</td>
+                <td>1</td>
+                <td>24.02.2020</td>
+                <td>В пути</td>
+                <td>256</td>
+                <td>Мыло</td>
+                <td>5</td>
+                <td>20</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>753</td>
+                <td>Сало</td>
+                <td>10</td>
+                <td>200</td>
+                <td>2000</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>123</td>
+                <td>Рыло</td>
+                <td>100</td>
+                <td>20</td>
+                <td>2000</td>
+            </tr>
+            <tr>
+                <td class="Total" colspan="8"><b>Итог</b></td>
+                <td class="Cost"><b>4100</b></td>
+            </tr>
+            <tr>
+                <td>23.02.2020</td>
+                <td>2</td>
+                <td>25.02.2020</td>
+                <td>Доставлен в пункт самовывоза</td>
+                <td>256</td>
+                <td>Мыло</td>
+                <td>5</td>
+                <td>20</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>753</td>
+                <td>Сало</td>
+                <td>10</td>
+                <td>200</td>
+                <td>2000</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>123</td>
+                <td>Рыло</td>
+                <td>100</td>
+                <td>20</td>
+                <td>2000</td>
+            </tr>
+            <tr>
+                <td class="Total" colspan="8"><b>Итог</b></td>
+                <td class="Cost"><b>4100</b></td>
+            </tr>
+            <tr>
+                <td>24.02.2020</td>
+                <td>3</td>
+                <td>26.02.2020</td>
+                <td>Доставлен в пункт самовывоза</td>
+                <td>256</td>
+                <td>Мыло</td>
+                <td>5</td>
+                <td>20</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>753</td>
+                <td>Сало</td>
+                <td>10</td>
+                <td>200</td>
+                <td>2000</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>123</td>
+                <td>Рыло</td>
+                <td>100</td>
+                <td>20</td>
+                <td>2000</td>
+            </tr>
+            <tr>
+                <td class="Total" colspan="8"><b>Итог</b></td>
+                <td class="Cost"><b>4100</b></td>
+            </tr>
+        </table>
+    </div>
+    <style>
+        td {
+            padding: 4px;
+        }
+
+        .Total {
+            text-align: left;
+            border-bottom-width: 2px;
+            border-bottom-style: solid;
+            border-bottom-color: black;
+        }
+        .Cost {
+            border-bottom-width: 2px;
+            border-bottom-style: solid;
+            border-bottom-color: black;
+        }
+    </style>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+</body>
+</html>
