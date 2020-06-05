@@ -6,9 +6,9 @@ using System.Web.Mvc;
 
 namespace WebApp.Controllers
 {
-    public class CartController : Controller
+    public class PaymentController : Controller
     {
-        public ActionResult Index()
+        public ActionResult PaymentData()
         {
             return View();
         }

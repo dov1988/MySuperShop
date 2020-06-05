@@ -17,14 +17,9 @@ namespace WebApp.Controllers
             return View();
         }
 
-        public ActionResult PasswordRecovery()
+        public ActionResult OrderRegistration()
         {
             return View();
-        }
-
-        public ActionResult HomePage()
-        {
-           return View();
         }
     }
 }

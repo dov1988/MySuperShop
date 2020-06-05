@@ -136,7 +136,9 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\PaymentController.cs" />
     <Compile Include="Controllers\CartController.cs" />
+    <Compile Include="Controllers\ReviewsController.cs" />
     <Compile Include="Controllers\ProductsDataController.cs" />
     <Compile Include="Controllers\OrdersDataController.cs" />
     <Compile Include="Controllers\PersonalDataController.cs" />
@@ -192,6 +194,10 @@
     <Content Include="Views\ProductsData\PagesCatalog.cshtml" />
     <Content Include="Views\ProductsData\ProductDetails.cshtml" />
     <Content Include="Views\Cart\Index.cshtml" />
+    <Content Include="Views\Reviews\Index.cshtml" />
+    <Content Include="Views\Reviews\AddReview.cshtml" />
+    <Content Include="Views\OrdersData\OrderRegistration.cshtml" />
+    <Content Include="Views\Payment\PaymentData.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

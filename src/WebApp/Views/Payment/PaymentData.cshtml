@@ -1,0 +1,29 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Оплата заказа";
+}
+
+    <div>
+        <h4><b>Оплата заказа</b></h4>
+        <br />
+        <br />
+        <p><b>Номер банковской карты</b></p>
+        @Html.TextBox("Label", "Введите номер карты...")
+        <br />
+        <br />
+        <p><b>Срок действия карты</b></p>
+        @Html.TextBox("Label", "ММ.ГГ")
+        <br />
+        <br />
+        <p><b>CVV2/CVC2 (цифры на обороте карты)</b></p>
+        @Html.TextBox("Label")
+        <br />
+        <br />
+        <p><b>Общая сумма заказа</b></p>
+        <p>20 220 руб</p>
+        <br />
+        <br />
+        <p><b><input type="submit" value="Оплатить" /></b></p>
+    </div>
+

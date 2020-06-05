@@ -1,0 +1,18 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Добавление отзыва";
+}
+
+    <div>
+        <p>
+            Введите Ваш отзыв не более чем на 500 символов и нажмите кнопку
+            "Опубликовать отзыв":
+        </p>
+        <br />
+        <br />
+        @Html.TextBox("Label")
+        <br />
+        <br />
+        <p><b><input type="submit" value="Опубликовать отзыв" /></b></p>
+    </div>
+
