@@ -1,19 +1,9 @@
 ﻿
 @{
-    Layout = null;
-    ViewBag.Title = "Registration";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Регистрация";
 }
-<!DOCTYPE html>
 
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>My Super Shop - Регистрация</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
-</head>
-<body>
     <div>
         <h4><b>Регистрация</b></h4>
         <br/>
@@ -32,10 +22,7 @@
             @Html.TextBox("Label")<br />
             <p><input type="submit" value="Создать аккаунт" /></p>
     </div>
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-</body>
-</html>
+
 
 
 
