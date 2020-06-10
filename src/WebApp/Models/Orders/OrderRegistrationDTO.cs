@@ -1,0 +1,13 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+
+namespace WebApp.Models.Orders
+{
+    public class OrderRegistrationDTO
+    {
+        public int OrderNumber { get; set; }
+        public double TotalPrice { get; set; }
+    }
+}

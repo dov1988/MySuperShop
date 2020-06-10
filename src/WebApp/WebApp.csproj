@@ -140,12 +140,23 @@
     <Compile Include="Controllers\CartController.cs" />
     <Compile Include="Controllers\ReviewsController.cs" />
     <Compile Include="Controllers\ProductsDataController.cs" />
-    <Compile Include="Controllers\OrdersDataController.cs" />
+    <Compile Include="Controllers\OrdersController.cs" />
     <Compile Include="Controllers\PersonalDataController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Cart\IndexDTO.cs" />
+    <Compile Include="Models\Orders\OrderProductDTO.cs" />
+    <Compile Include="Models\Orders\OrderRegistrationDTO.cs" />
+    <Compile Include="Models\Orders\OrdersDataDTO.cs" />
+    <Compile Include="Models\Payment\IndexDTO.cs" />
+    <Compile Include="Models\PersonalData\PersonalAreaDTO.cs" />
+    <Compile Include="Models\ProductsData\ProductsCatalogDTO.cs" />
+    <Compile Include="Models\ProductsData\PageCatalogDTO.cs" />
+    <Compile Include="Models\ProductsData\ProductDetailsDTO.cs" />
+    <Compile Include="Models\Reviews\IndexDTO.cs" />
+    <Compile Include="Models\Reviews\ProductReviewDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -188,20 +199,19 @@
     <Content Include="Views\PersonalData\PersonalArea.cshtml" />
     <Content Include="Views\PersonalData\DataEditing.cshtml" />
     <Content Include="Views\PersonalData\DataStorage.cshtml" />
-    <Content Include="Views\OrdersData\OrdersHistory.cshtml" />
-    <Content Include="Views\OrdersData\OrdersCurrent.cshtml" />
+    <Content Include="Views\Orders\OrdersHistory.cshtml" />
+    <Content Include="Views\Orders\OrdersCurrent.cshtml" />
     <Content Include="Views\ProductsData\ProductsCatalog.cshtml" />
-    <Content Include="Views\ProductsData\PagesCatalog.cshtml" />
+    <Content Include="Views\ProductsData\PageCatalog.cshtml" />
     <Content Include="Views\ProductsData\ProductDetails.cshtml" />
     <Content Include="Views\Cart\Index.cshtml" />
     <Content Include="Views\Reviews\Index.cshtml" />
     <Content Include="Views\Reviews\AddReview.cshtml" />
-    <Content Include="Views\OrdersData\OrderRegistration.cshtml" />
+    <Content Include="Views\Orders\OrderRegistration.cshtml" />
     <Content Include="Views\Payment\PaymentData.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
     <Folder Include="Views\Default\" />
   </ItemGroup>
   <ItemGroup>

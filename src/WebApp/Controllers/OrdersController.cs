@@ -6,18 +6,18 @@ using System.Web.Mvc;
 
 namespace WebApp.Controllers
 {
-    public class ProductsDataController : Controller
+    public class OrdersController : Controller
     {
-        public ActionResult ProductsCatalog()
+        public ActionResult OrdersHistory()
         {
             return View();
         }
-        public ActionResult PageCatalog()
+        public ActionResult OrdersCurrent()
         {
             return View();
         }
 
-        public ActionResult ProductDetails()
+        public ActionResult OrderRegistration()
         {
             return View();
         }
