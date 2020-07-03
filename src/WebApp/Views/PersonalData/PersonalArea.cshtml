@@ -1,32 +1,34 @@
-﻿
+﻿@model WebApp.Models.PersonalData.PersonalAreaDTO
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
     ViewBag.Title = "Личный кабинет";
 }
 
-    <div>
-        <h4><b>Личный кабинет</b></h4>
-        <br />
-        <br />
-        <img src="https://23.img.avito.st/640x480/4907230123.jpg" width="157 " height="155"/>
-        <p><input type="submit" value="Изменить фотографию" /></p>
-        <p><b>Фамилия: </b></p>
-        <p>Бурмистров</p>
-        <p><b>Имя:</b></p>
-        <p>Сергей</p>
-        <p><b>Отчество</b>: </p>
-        <p>Борисович</p>
-        <p><b>Дата рождения</b>: </p>
-        <p>27.04.1988</p>
-        <p><b>Телефон:</b></p>
-        <p>+7(919)-825-47-70</p>
-        <p><b>Email:</b></p>
-        <p>bsb1988@gmail.com</p><br />
-        <p><input type="submit" value="Редактировать данные" /></p>
-        <a><p>Посмотреть историю заказов</p></a>
-        <a><p>Посмотреть состояние текущего заказа</p></a>
-    </div>
-  
+<div>
+    <h4><b>Личный кабинет</b></h4>
+    <br />
+    <br />
+    <img src="@Model.Photo" width="157 " height="155" />
+    <p><input type="submit" value="Изменить фотографию" /></p>
+    <p><b>Фамилия: </b></p>
+    <p>@Model.LastName</p>
+    <p><b>Имя:</b></p>
+    <p>@Model.FirstName</p>
+    <p><b>Отчество</b>: </p>
+    <p>@Model.MiddleName</p>
+    <p><b>Пол</b>: </p>
+    <p>@Model.Gender</p>
+    <p><b>Дата рождения</b>: </p>
+    <p>@Model.Birthday.ToShortDateString()</p>
+    <p><b>Телефон:</b></p>
+    <p>@Model.Phone</p>
+    <p><b>Email:</b></p>
+    <p>@Model.Email</p><br />
+    <p><input type="submit" value="Редактировать данные" /></p>
+    <a><p>Посмотреть историю заказов</p></a>
+    <a><p>Посмотреть состояние текущего заказа</p></a>
+</div>
+
 
 
 

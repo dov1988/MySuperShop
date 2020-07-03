@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace WebApp.Models.OrdersData
+namespace WebApp.Models.PersonalData
 {
     public class PersonalAreaDTO
     {

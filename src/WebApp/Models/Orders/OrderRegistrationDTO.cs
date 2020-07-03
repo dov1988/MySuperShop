@@ -7,7 +7,8 @@ namespace WebApp.Models.Orders
 {
     public class OrderRegistrationDTO
     {
-        public int OrderNumber { get; set; }
+        public string OrderNumber { get; set; }
+        public string PaymentType { get; set; }
         public double TotalPrice { get; set; }
     }
 }

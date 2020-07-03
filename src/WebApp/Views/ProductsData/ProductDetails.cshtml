@@ -1,4 +1,4 @@
-﻿
+﻿@model WebApp.Models.ProductsData.ProductDetailsDTO
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
     ViewBag.Title = "Карточка товара";
@@ -8,28 +8,19 @@
         <h4><b>Карточка товара</b></h4>
         <br />
         <br />
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSzl__tEa_WO_OcHIGgiwMk6vNNBRZ4DF2Zjm2BcPgQt8x_NRhL&usqp=CAU" width="489" height="322" />
-        <p>Варежки <b>Бабушка-рукодельница</b></p>
-        <p>
-        <p><b>Артикул: </b>1232545</p>
+        <img src="@Model.Photo" width="489" height="322" />
+        <p>@Model.Name</p>
+        <p><b>Артикул: </b>@Model.Number</p>
         <b>Размер: </b>
-        <input type="submit" value="S" />
-        <input type="submit" value="M" />
-        <input type="submit" value="L" />
-        <input type="submit" value="XL" />
-        </p>
-        <p><b>Цена: </b>1 555 руб</p>
-        <p><b>Состав: </b>Шерсть 100%</p>
-        <p><b>Цвет: </b>Белый</p>
-        <p>
-            <b>Описание: </b>
-            Очень теплые варежки из натуральной бараньей  шерсти,
-            заботливо связанные бабушкой Зиной из заснеженной
-            Сибири. Эти варежки согреют вас холодной зимой, а запах
-            прелого барана убережёт Вас от любой напасти: настойчивых мужиков,
-            детей, медведей, продавцов Oriflame и свидетелей Иеговы.
-        </p>
-        <p><b>Отзывы: </b><a>152</a></p>
+        @foreach (string size in Model.Sizes)
+        {
+            <input type="submit" value="@size" />
+        }
+        <p><b>Цена: </b>@Model.Price</p>
+        <p><b>Состав: </b>@Model.Composition</p>
+        <p><b>Цвет: </b>@Model.Color</p>
+        <p><b>Описание: </b>@Model.Composition</p>
+        <p><b>Отзывы: </b><a>@Model.Reviews.Count</a></p>
         <p><b><input type="submit" value="Добавить товар в корзину" /></b></p>
     </div>
   

@@ -8,15 +8,11 @@
         <h4><b>Каталог товаров</b></h4>
         <br />
         <br />
-        <p><b>Одежда: </b></p>
-        <a><ol>Мужская</ol></a>
-        <a><ol>Женская</ol></a>
-        <a><ol>Детская</ol></a>
-        <a><p>Автомобильные товары</p></a>
-        <a><p>Бытовая техника</p></a>
-        <a><p>Бытовая химия</p></a>
-        <a><p>Игрушки</p></a>
-        <a><p>Товары для животных</p></a>
-        <a><p>Ювелирные украшения</p></a>
+        @foreach (WebApp.Models.ProductsData.CategoryDTO category in @Model)
+        {
+            <a><b>@category.Category</b></a>
+            <br />
+            <br />
+        }
     </div>
     

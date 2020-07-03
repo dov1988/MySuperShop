@@ -5,7 +5,7 @@ using System.Web;
 
 namespace WebApp.Models.ProductsData
 {
-    public class ProductsCatalogDTO
+    public class CategoryDTO
     {
         public string Category { get; set; }
     }

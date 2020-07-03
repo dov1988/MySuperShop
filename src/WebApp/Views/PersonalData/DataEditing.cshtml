@@ -1,4 +1,4 @@
-﻿
+﻿@model WebApp.Models.PersonalData.PersonalAreaDTO
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
     ViewBag.Title = "Редактирование данных";
@@ -12,17 +12,17 @@
         <br />
         <br />
         <p><b>Фамилия: </b></p>
-        @Html.TextBox("Label")
+        @Html.TextBox("Label", Model.LastName)
         <p><b>Имя:</b></p>
-        @Html.TextBox("Label")
+        @Html.TextBox("Label", Model.FirstName)
         <p><b>Отчество</b>: </p>
-        @Html.TextBox("Label")
+        @Html.TextBox("Label", Model.MiddleName)
         <p><b>Дата рождения</b>: </p>
-        @Html.TextBox("Label")
+        @Html.TextBox("Label", Model.Birthday.ToShortDateString())
         <p><b>Телефон:</b></p>
-        @Html.TextBox("Label")
+        @Html.TextBox("Label", Model.Phone)
         <p><b>Email:</b></p>
-        @Html.TextBox("Label")
+        @Html.TextBox("Label", Model.Email)
         <br />
         <p><input type="submit" value="Сохранить данные" /></p>
     </div>

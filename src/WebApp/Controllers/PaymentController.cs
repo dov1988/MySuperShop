@@ -10,7 +10,8 @@ namespace WebApp.Controllers
     {
         public ActionResult PaymentData()
         {
-            return View();
+            double totalPrice = 168764;
+            return View(totalPrice);
         }
     }
 }

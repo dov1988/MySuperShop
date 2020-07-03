@@ -150,9 +150,8 @@
     <Compile Include="Models\Orders\OrderProductDTO.cs" />
     <Compile Include="Models\Orders\OrderRegistrationDTO.cs" />
     <Compile Include="Models\Orders\OrdersDataDTO.cs" />
-    <Compile Include="Models\Payment\IndexDTO.cs" />
     <Compile Include="Models\PersonalData\PersonalAreaDTO.cs" />
-    <Compile Include="Models\ProductsData\ProductsCatalogDTO.cs" />
+    <Compile Include="Models\ProductsData\CategoryDTO.cs" />
     <Compile Include="Models\ProductsData\PageCatalogDTO.cs" />
     <Compile Include="Models\ProductsData\ProductDetailsDTO.cs" />
     <Compile Include="Models\Reviews\IndexDTO.cs" />

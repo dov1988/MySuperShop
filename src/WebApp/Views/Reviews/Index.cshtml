@@ -1,65 +1,32 @@
-﻿@{
+﻿@model WebApp.Models.Reviews.ProductReviewDTO
+@{
     Layout = "~/Views/Shared/_Layout.cshtml";
     ViewBag.Title = "Отзывы";
 }
 
-    <div>
-        <h4><b>Отзывы</b></h4>
-        <br />
-        <br />
-        <table>
+<div>
+    <h4><b>Отзывы</b></h4>
+    <br />
+    <br />
+    <p><b>@Model.Name</b> Артикул: <b>@Model.Number</b></p>
+    <br />
+    <br />
+    <table>
+        @foreach (WebApp.Models.Reviews.IndexDTO review in @Model.Reviews)
+        {
             <tr>
-                <td><b>17.05.2018</b></td>
-                <td><b>Мария</b></td>
-                <td>Варежки прекрасные!</td>
+                <td>@review.DateReview.ToShortDateString()</td>
+                <td><b>@review.NameCustomer:</b></td>
+                <td>@review.TextReview</td>
             </tr>
-            <tr>
-                <td><b>20.06.2015</b></td>
-                <td><b>Арман</b></td>
-                <td>Говно ваши варежки!</td>
-            </tr>
-            <tr>
-                <td><b>12.03.2015</b></td>
-                <td><b>Ольга</b></td>
-                <td>На разок пойдут...</td>
-            </tr>
-            <tr>
-                <td><b>12.02.2015</b></td>
-                <td><b>Анфиса</b></td>
-                <td>Порвались в первый же день!</td>
-            </tr>
-            <tr>
-                <td><b>12.02.2015</b></td>
-                <td><b>Степан</b></td>
-                <td>Варежки пришли поеденные молью!</td>
-            </tr>
-            <tr>
-                <td><b>22.01.2015</b></td>
-                <td><b>Антон</b></td>
-                <td>На зимнюю рыбалку вообще отлично!</td>
-            </tr>
-            <tr>
-                <td><b>23.04.2014</b></td>
-                <td><b>Екатерина</b></td>
-                <td>В -30 в них холодно! Отморозила руки!</td>
-            </tr>
-            <tr>
-                <td><b>12.02.2014</b></td>
-                <td><b>Олег</b></td>
-                <td>Моя бабушка лучше вяжет. Обращайтесь!</td>
-            </tr>
-            <tr>
-                <td><b>12.01.2014</b></td>
-                <td><b>Алла</b></td>
-                <td>Мне оказались малы, пришлось оставить ребенку на вырост.</td>
-            </tr>
-        </table>
-        <br />
-        <br />
-        <p><b><input type="submit" value="Добавить отзыв" /></b></p>
-    </div>
+        }
+    </table>
+    <br />
+    <br />
+    <p><b><input type="submit" value="Добавить отзыв" /></b></p>
+</div>
 <style>
-    td{
-        padding:6px;
+    td {
+        padding: 6px;
     }
 </style>

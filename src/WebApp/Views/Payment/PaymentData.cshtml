@@ -1,4 +1,4 @@
-﻿
+﻿@model System.Double
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
     ViewBag.Title = "Оплата заказа";
@@ -21,7 +21,7 @@
         <br />
         <br />
         <p><b>Общая сумма заказа</b></p>
-        <p>20 220 руб</p>
+        <p>@Model</p>
         <br />
         <br />
         <p><b><input type="submit" value="Оплатить" /></b></p>
