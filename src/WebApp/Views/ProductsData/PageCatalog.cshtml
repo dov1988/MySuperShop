@@ -4,19 +4,19 @@
     ViewBag.Title = "Одежда женская";
 }
 
-    <div>
-        <h4><b>Одежда</b></h4>
+<div>
+    <h4><b>Одежда</b></h4>
+    <br />
+    <br />
+    <p><input type="submit" value="Фильтр" /></p>
+    @foreach (WebApp.Models.ProductsData.PageCatalogDTO product in @Model)
+    {
+        <a href="/ProductsData/ProductDetails"><img src="@product.Photo" width="189" height="255" /></a>
+        <p>@product.Name</p>
+        <p><b>@product.Price</b> руб</p>
+        <a href="/ProductsData/ProductDetails">Подробнее о товаре...</a>
         <br />
         <br />
-        <p><input type="submit" value="Фильтр" /></p>
-        @foreach (WebApp.Models.ProductsData.PageCatalogDTO product in @Model)
-        {
-            <a><img src = "@product.Photo" width="189" height="255" /></a>
-            <p>@product.Name</p>
-            <p><b>@product.Price</b> руб</p>
-            <a>Подробнее о товаре...</a>
-            <br />
-            <br />
-        }
-    </div>
+    }
+</div>
 
