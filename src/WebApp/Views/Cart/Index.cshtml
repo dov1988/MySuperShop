@@ -3,45 +3,51 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
     ViewBag.Title = "Корзина";
 }
-    <div>
-        <h4><b>Корзина</b></h4>
-        <br />
-        <br />
-        <table>
-            <tr>
-                <td> </td>
-                <td><b>Артикул</b></td>
-                <td><b>Наименование</b></td>
-                <td><b>Количество</b></td>
-                <td><b>Цена</b></td>
-            </tr>
-            @{
-                double total = 0;
-            }
-            @foreach (WebApp.Models.Cart.IndexDTO products in @Model)
-            {
-                <tr>
-                    <td><a><img src="@products.Photo" width="89" height="155" /></a></td>
-                    <td>@products.Number</td>
-                    <td>@products.Name</td>
-                    <td>@products.Quantity</td>
-                    <td>@products.Price</td>
-                </tr>
-                  total = total + products.Price;
-            }
-            <tr>
-                <td class="Total " colspan="4"><b>Итог</b></td>
-                <td><b>@total</b></td>
-            </tr>
-        </table>
-    </div>
-    <style>
-        td {
-            padding: 9px;
+<div>
+    <h4><b>Корзина</b></h4>
+    <br />
+    <br />
+    <table>
+        <tr>
+            <td> </td>
+            <td><b>Артикул</b></td>
+            <td><b>Наименование</b></td>
+            <td><b>Количество</b></td>
+            <td><b>Цена</b></td>
+        </tr>
+        @{
+            double total = 0;
         }
-        .Total{
-            text-align: left;
+        @foreach (WebApp.Models.Cart.IndexDTO products in @Model)
+        {
+            <tr>
+                <td><a><img src="@products.Photo" width="89" height="155" /></a></td>
+                <td>@products.Number</td>
+                <td>@products.Name</td>
+                <td>@products.Quantity</td>
+                <td>@products.Price</td>
+            </tr>
+            total = total + products.Price;
         }
-    </style>
+        <tr>
+            <td class="Total " colspan="4"><b>Итог</b></td>
+            <td><b>@total</b></td>
+        </tr>
+    </table>
+    <br />
+    <br />
+    <form action="/Orders/OrderRegistration">
+        <p><b><input type="submit" value="Оформить заказ" /></b></p>
+    </form>
+</div>
+<style>
+    td {
+        padding: 9px;
+    }
+
+    .Total {
+        text-align: left;
+    }
+</style>
 
 
